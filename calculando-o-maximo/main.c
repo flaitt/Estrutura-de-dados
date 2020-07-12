@@ -1,5 +1,5 @@
 # include <stdio.h>
-// [1,2]
+# define INT_MIN -2147483648
 int maximo(int *v, int tam, int novo_max){
     if(tam == 1) {
         if (v[tam-1]>novo_max) {
@@ -19,6 +19,6 @@ int main (){
     int vetor[10] = {1,2,3,4,15,6,7,8,9,10};
     int tamanho_do_vetor = 10;
 
-    printf("O maximo eh: %i \n", maximo(vetor,tamanho_do_vetor, -1));
+    printf("O maximo eh: %i \n", maximo(vetor,tamanho_do_vetor, INT_MIN));
     return 0;
 }
